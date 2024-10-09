@@ -1,6 +1,75 @@
 <!DOCTYPE html>
 <html>
-<body>
-<p>coming soon...</p>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khushdip Nijjar</title>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome reference: https://fontawesome.com/v4/icons/-->
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon//apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon//favicon-16x16.png">
+    <link rel="manifest" href="img/favicon//site.webmanifest">
+</head>
+
+<body class="flex flex-col min-h-screen">
+    <p class="p-4 text-2xl text-rose-400 font-medium">Khushdip Nijjar</p>
+
+    <div class="sm:flex sm:flex-row">
+
+        <!-- navigation -->
+        <div class="flex justify-center">
+            <div class="p-4 sm:basis-1/6">
+                <div class="flex flex-row" onclick="navigate('experience')">
+                    <i class="mx-1 fa fa-arrow-right text-xs pt-1" aria-hidden="true"></i>
+                    <p class="font-serif">experience</p>
+                </div>
+                <div class="flex flex-row" onclick="navigate('education')">
+                    <i class="mx-1 fa fa-arrow-right text-xs pt-1" aria-hidden="true"></i>
+                    <p class="font-serif">education</p>
+                </div>
+                <div class="flex flex-row" onclick="navigate('projects')">
+                    <i class="mx-1 fa fa-arrow-right text-xs pt-1" aria-hidden="true"></i>
+                    <p class="font-serif">projects</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- content -->
+        <div class="p-4 sm:basis-5/6">
+            <div id="experience">
+                <p class="text-xl">Experience</p>
+            </div>
+            <div id="education">
+                <p class="text-xl">Education</p>
+                <div id="edu-tmu" class="my-5 ml-5">
+                    <p class="text-rose-400">Computer Science, Honours Bachelor of Science</p>
+                    <p>Toronto Metropolitan University</p>
+                    <p>September 2019 - June 2024</p>
+                    <p>Toronto, ON</p>
+                </div>
+            </div>
+            <div id="projects">
+                <p class="text-xl">Projects</p>
+            </div>
+        </div>
+
+    </div>
+
 </body>
+
+<!-- footer -->
+<footer class="mt-auto sm:flex sm:flex-row p-4">
+    <p class="flex justify-center sm:justify-start sm:basis-1/2">© 2024 Khushdip Nijjar, All rights reserved.</p>
+    <div class="flex flex-row justify-center mt-2 sm:justify-end sm:basis-1/2">
+        <a class="mx-1 fa fa-linkedin-square fa-2x" aria-hidden="true"
+            href="https://www.linkedin.com/in/khushdip-nijjar"></a>
+        <a class="mx-1 fa fa-github fa-2x" aria-hidden="true" href="https://github.com/khushdip"></a>
+    </div>
+</footer>
+
 </html>
